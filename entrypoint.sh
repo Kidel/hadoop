@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#  This file is taken (and edited) from Hari Sekhon's repository for Hadoop on Docker
+#  This file is mostly taken (but edited) from Hari Sekhon's repository for Hadoop on Docker
 #
 #  Author: Hari Sekhon
 #  Date: 2016-04-24 21:29:46 +0100 (Sun, 24 Apr 2016)
@@ -20,6 +20,8 @@ set -euo pipefail
 srcdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 export JAVA_HOME="${JAVA_HOME:-/usr}"
+export HADOOP_HOME=/hadoop
+export PATH $PATH:$HADOOP_HOME/bin
 
 if [ $# -gt 0 ]; then
     exec $@
@@ -56,4 +58,7 @@ else
     tail -f /hadoop/logs/*
     /hadoop/sbin/stop-yarn.sh
     /hadoop/sbin/stop-dfs.sh
+
 fi
+
+/hadoop/sbin/mr-jobhistory-daemon.sh start historyserver

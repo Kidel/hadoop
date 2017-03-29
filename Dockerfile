@@ -31,7 +31,6 @@ RUN \
     rm -fv "$TAR" && \
     /hadoop/bin/hdfs namenode -format && \
     yum autoremove -y && \
-    yum install -y hostname && \
     yum clean all
 
 COPY entrypoint.sh /
@@ -40,9 +39,6 @@ COPY conf/hdfs-site.xml /hadoop/etc/hadoop/
 COPY conf/yarn-site.xml /hadoop/etc/hadoop/
 COPY conf/mapred-site.xml /hadoop/etc/hadoop/
 COPY profile.d/hadoop.sh /etc/profile.d/
-
-ENV HADOOP_HOME /hadoop
-ENV PATH $PATH:$HADOOP_HOME/bin
 
 EXPOSE 50010 50020 50070 50075 50090 8020 9000 10020 19888 8030 8031 8032 8033 8040 8042 8088 49707 2122
 
