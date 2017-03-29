@@ -21,7 +21,7 @@ srcdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 export JAVA_HOME="${JAVA_HOME:-/usr}"
 export HADOOP_HOME=/hadoop
-export PATH $PATH:$HADOOP_HOME/bin
+export PATH=$PATH:$HADOOP_HOME/bin
 
 if [ $# -gt 0 ]; then
     exec $@
