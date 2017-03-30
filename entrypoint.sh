@@ -1,11 +1,7 @@
 #!/usr/bin/env bash
-
-#  This file is mostly taken (but edited) from Hari Sekhon's repository for Hadoop on Docker
 #
 #  Author: Hari Sekhon
 #  Date: 2016-04-24 21:29:46 +0100 (Sun, 24 Apr 2016)
-#  Edited by Gaetano Bonofiglio
-#  Date: 03/2017
 #
 #  https://github.com/harisekhon/Dockerfiles/hadoop-dev
 #
