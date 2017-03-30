@@ -38,7 +38,10 @@ COPY conf/core-site.xml /hadoop/etc/hadoop/
 COPY conf/hdfs-site.xml /hadoop/etc/hadoop/
 COPY conf/yarn-site.xml /hadoop/etc/hadoop/
 COPY conf/mapred-site.xml /hadoop/etc/hadoop/
+
 COPY profile.d/hadoop.sh /etc/profile.d/
+
+COPY run_history_service.sh /
 
 EXPOSE 50010 50020 50070 50075 50090 8020 9000 10020 19888 8030 8031 8032 8033 8040 8042 8088 49707 2122
 
