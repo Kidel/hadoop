@@ -27,9 +27,10 @@ You can also access to Hadoop's web monitor from [localhost:50070](http://localh
 ## Test
 Once inside the container run this command to see if everything works
 ```
-yarn jar /home/shared/hadoop-mapreduce-examples-2.2.0.jar pi 10 1000
+yarn jar /home/shared/hadoop-mapreduce-examples-2.2.0.jar pi 1 10
 ```
 Additionally you can run this command to later see the logs on [localhost:19888](http://localhost:19888)
 ```
 ./run_history_service.sh
 ```
+(if it was not already running)
