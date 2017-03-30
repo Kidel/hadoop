@@ -1,5 +1,5 @@
-# hadoop
-Docker image for Hadoop
+# Hadoop Docker
+Docker image for Hadoop 2.8.0
 
 ## Instructions
 For the first time just run this command inside the folder
