@@ -61,4 +61,7 @@ else
 
 fi
 
+# starts the history server
 /hadoop/sbin/mr-jobhistory-daemon.sh start historyserver
+
+jps
