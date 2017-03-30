@@ -1,8 +1,8 @@
 version: "2.1"
+
 services:
   hadoop:
     build: .
-    privileged: true
     container_name: hadoop
     ports:
       - "50010:50010"
@@ -25,3 +25,4 @@ services:
       - "2122:2122"
     volumes:
       - "./shared:/home/shared"
+    tty: true
