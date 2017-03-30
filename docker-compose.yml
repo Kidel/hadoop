@@ -23,6 +23,9 @@ services:
       - "8088:8088"
       - "49707:49707"
       - "2122:2122"
+    environment:
+        - HADOOP_HOME=/hadoop
+        - PATH=/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/gradle/bin:/opt/jython/bin:/hadoop/bin
     volumes:
       - "./shared:/home/shared"
     tty: true

@@ -17,3 +17,19 @@ And you can run it later with
 ```
 docker-compose start
 ```
+
+To access the container use Kitematic or run
+```
+docker exec -ti hadoop bash
+```
+You can also access to Hadoop's web monitor from [localhost:50070](http://localhost:50070)
+
+## Test
+Once inside the container run this command to see if everything works
+```
+yarn jar /home/shared/hadoop-mapreduce-examples-2.2.0.jar pi 10 1000
+```
+Additionally you can run this command to later see the logs on [localhost:19888](http://localhost:19888)
+```
+./run_history_service.sh
+```
