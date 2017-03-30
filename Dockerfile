@@ -1,6 +1,7 @@
 #
 #  Author: Gaetano Bonofiglio
 #  Date: 03/2017
+#  Thanks to Hari Sekhon for the centOS image and the starting point
 #
 #  http://www.gaetanobonofiglio.com
 #  https://www.linkedin.com/in/bonofiglio
