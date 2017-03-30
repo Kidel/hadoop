@@ -61,4 +61,4 @@ else
 
 fi
 
-/hadoop/sbin/mr-jobhistory-daemon.sh start historyserver
+#/hadoop/sbin/mr-jobhistory-daemon.sh start historyserver

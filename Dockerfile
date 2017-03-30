@@ -23,7 +23,7 @@ RUN \
     yum install -y openssh-server openssh-client wget tar hostname && \
     echo "downloading $SOURCE" && \
     echo "please wait..." && \
-    wget -nv -t 100 --retry-connrefused -O "$TAR" "$SOURCE" && \
+    wget -t 100 --retry-connrefused -O "$TAR" "$SOURCE" && \
     echo "downloaded, unpacking..." && \
     tar zxf "$TAR" && \
     echo "done." && \
